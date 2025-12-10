@@ -25,12 +25,14 @@ class NLPApp:
     
 
     def register(self):
-        print("register")
-        pass
+        reg=RegisterSystem(self.database)
+        reg.register()
+        self.first_menu()
 
     def login(self):
-        print("login")  
-        pass  
+        log=LoginSystem(self.database)
+        log.login()
+        self.first_menu()
 
  
 
