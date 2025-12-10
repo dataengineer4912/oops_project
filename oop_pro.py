@@ -1,3 +1,4 @@
+
 class NLPApp:
     def __init__(Self):
         Self.__database={}
@@ -29,5 +30,7 @@ class NLPApp:
     def __login(self):
         print("login")  
         pass  
+
+from Register import NLPApp
 
 obj = NLPApp()   
