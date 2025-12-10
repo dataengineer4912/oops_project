@@ -1,10 +1,11 @@
-
+from Register import RegisterSystem
+from login import LoginSystem
 class NLPApp:
     def __init__(Self):
-        Self.__database={}
-        Self.__first_menu()
+        Self.database={}
+        Self.first_menu()
 
-    def __first_menu(self):
+    def first_menu(self):
         first_input=input("""
                         Hi! How would you like to proced?
                           1. Not a member? Register
@@ -13,24 +14,24 @@ class NLPApp:
                           """)
         
         if first_input == '1':
-            self.__register()
+            self.register()
 
         elif first_input == '2':
-            self.__login()
+            self.login()
 
         else:
             exit()
 
     
 
-    def __register(self):
+    def register(self):
         print("register")
         pass
 
-    def __login(self):
+    def login(self):
         print("login")  
         pass  
 
-from Register import NLPApp
+ 
 
 obj = NLPApp()   
